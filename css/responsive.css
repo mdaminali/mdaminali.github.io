@@ -1,0 +1,137 @@
+/*
+* ----------------------------------------------------------------------------------------
+Author       : amin
+Template Name: Nafi - Personal Portfolio Template
+Version      : 1.0
+* ----------------------------------------------------------------------------------------
+*/
+
+/* Small Mobile Layout: below 575px. */
+@media (max-width: 575.98px) { 
+    .portfolio-area .grid {
+        display: flex;
+        justify-content: center;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h1.cd-headline {
+        display: none;
+    }
+
+    .slider-content h2 {
+        font-size: 22px;
+    }
+    
+    .slider-content h1.mobile-slider-title {
+        font-size: 30px;
+    }
+    ul.expart-list {
+        width: 320px;
+    }
+    ul.expart-list li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    ul.expart-list li:after {
+        content: '';
+    }
+    .profile-btn a {
+        display: block;
+        margin-bottom: 25px;
+    }
+    .profile-btn a:last-child {
+        margin-bottom: 0px;
+    }
+    .overflow-fix {
+        overflow: hidden;
+        position: absolute;
+    }
+    .main-logo {
+        margin-top: 6px;
+    }
+
+    .main-header.affix {
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .message-box input.button {
+        float: none;
+    }
+ }
+
+/* Wide Mobile Layout: 576 to 767px. */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .portfolio-area .grid {
+        display: flex;
+        justify-content: center;
+    }
+
+    .slider-area .slider-content h1 {
+        font-size: 30px;
+    }
+    .mobile-slider-title {
+        display: none;
+    }
+    .overflow-fix {
+        overflow: hidden;
+        position: absolute;
+    }
+    .main-logo {
+        margin-top: 6px;
+    }
+
+    .main-header.affix {
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .message-box input.button {
+        float: none;
+    }
+
+
+ }
+
+/* Tablets Screen: 768px to 992px. */
+@media (min-width: 768px) and (max-width: 991.98px) { 
+        .slider-area .slider-content h1 {
+            font-size: 36px;
+        }
+        .mobile-slider-title {
+            display: none;
+        }
+        .main-menu li {
+            display: inline-block;
+            padding: 0px 12px;
+        }
+
+        .contact-address h4 {
+            font-size: 16px;
+        }
+ }
+
+/* Laptop Screen: 992px to 1280px. */
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .mobile-slider-title {
+        display: none;
+    }
+
+    .about-content-wrapper.text-center {
+        padding-left: 30px;
+        padding-top: 30px;
+    }
+}
+
+/* Large Desktop: 1280px up */
+@media (min-width: 1200px) { 
+    .mobile-slider-title {
+        display: none;
+    }
+
+    .about-content-wrapper.text-center {
+        padding-top: 70px;
+        padding-left: 30px;
+    }
+ }
