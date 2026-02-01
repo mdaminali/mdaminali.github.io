@@ -1266,31 +1266,51 @@ header {
 	text-transform: uppercase;
 }
 
+.headline-subtitle {
+	font-size: 16px;
+	color: #cccccb;
+	font-weight: 300;
+	letter-spacing: 1px;
+	margin-top: 15px;
+}
+
 ul.expart-list {
-	background: rgba(0, 0, 0, 0.2);
-	width: 350px;
-	display: block;
-	margin: 0px auto;
-	padding: 5px 0px;
+	list-style: none;
+	width: auto;
+	display: flex;
+	margin: 30px auto 0;
+	padding: 0;
+	gap: 20px;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 
 ul.expart-list li {
 	position: relative;
-	display: inline-block;
-	padding: 0px 16px;
+	display: inline-flex;
+	align-items: center;
+	padding: 10px 20px;
 	text-transform: uppercase;
 	font-size: 12px;
-	color: #cccccb;
+	color: #fff;
 	font-weight: 600;
-	letter-spacing: 2.5px;
+	letter-spacing: 1.5px;
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 25px;
+	transition: all 0.3s ease;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+ul.expart-list li:hover {
+	background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.1) 100%);
+	border-color: rgba(255, 255, 255, 0.4);
+	transform: translateY(-2px);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 ul.expart-list li:after {
-	content: "+";
-	font-size: 20px;
-	position: absolute;
-	top: -6px;
-	right: -8px;
+	content: "";
 }
 
 ul.expart-list li:last-child:after {
